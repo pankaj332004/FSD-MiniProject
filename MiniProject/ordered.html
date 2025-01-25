@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Successful</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .order-success {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    h1 {
+        color: #4CAF50;
+    }
+    
+    p {
+        color: #333;
+        font-size: 18px;
+    }
+    
+    .success-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .success-button:hover {
+        background-color: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <div class="order-success">
+        <h1>Thank You!</h1>
+        <p>Your order was successful.</p>
+        <button class="success-button">Order Successful</button>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center; background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0078d4;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin-top: 10px;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa1;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order Your Product</h1>
+    <button id="orderButton">Order Now</button>
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('orderButton').addEventListener('click', function () {
+            const message = document.getElementById('message');
+            message.textContent = 'Your product has been ordered successfully!';
+        });
+    </script>
+</body>
+</html>
+
